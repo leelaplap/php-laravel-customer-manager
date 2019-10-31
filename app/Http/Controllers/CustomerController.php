@@ -4,14 +4,21 @@ namespace App\Http\Controllers;
 use App\City;
 use App\Customer;
 use App\Http\Requests\CustomerValidateRequest;
+use App\Services\CustomerServiceInterface;
 use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
+    protected $customerService;
+
+    public function __construct(CustomerServiceInterface $customerService)
+    {
+        $this->customerService = $customerService;
+    }
 
     public function index()
     {
-        $customers = Customer::all();
+        $customers = $this->customerService->getAll();
         return view('customer.index', compact('customers'));
     }
 

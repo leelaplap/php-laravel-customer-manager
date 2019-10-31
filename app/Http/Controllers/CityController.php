@@ -3,14 +3,21 @@
 namespace App\Http\Controllers;
 
 use App\City;
+use App\Services\CityServiceInterface;
 use Illuminate\Http\Request;
 
 class CityController extends Controller
 {
+    protected $cityService;
+
+    public function __construct(CityServiceInterface $cityService)
+    {
+        $this->cityService = $cityService;
+    }
 
     public function index()
     {
-        $cities = City::all();
+        $cities = $this->cityService->getAll();
         return view('city.index', compact('cities'));
     }
 
@@ -23,10 +30,7 @@ class CityController extends Controller
 
     public function store(Request $request)
     {
-        $city = new City();
-        $city->name = $request->name;
-        $city->save();
-
+        $this->cityService->add($request);
         return redirect()->route('cities.index');
     }
 
@@ -46,18 +50,20 @@ class CityController extends Controller
 
     public function update(Request $request, $id)
     {
-        $city = City::findOrFail($id);
-        $city->name = $request->name;
-        $city->save();
+//        $city = City::findOrFail($id);
+//        $city->name = $request->name;
+//        $city->save();
+        $this->cityService->edit($id,$request);
         return redirect()->route('cities.index');
 
     }
 
     public function destroy($id)
     {
-        $city = City::findOrFail($id);
-        $city->delete();
+        $this->cityService->delete($id);
         return redirect()->route('cities.index');
 
     }
+
+
 }

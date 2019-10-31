@@ -1,7 +1,7 @@
 @extends('home')
 @section('title','Cites list')
 @section('content')
-
+    <form action=""></form>
     <div class="row justify-content-center">
 
         <div class="col-md-6" >
@@ -31,7 +31,8 @@
                     @endforeach
                 </table>
             </div>
+            {{$cities->links()}}
+
         </div>
     </div>
-
 @endsection
