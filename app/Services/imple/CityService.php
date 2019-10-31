@@ -20,26 +20,32 @@ class CityService implements CityServiceInterface
 
     public function getAll()
     {
-       return $this->cityRepo->getAll();
+        return $this->cityRepo->getAll();
     }
 
     public function add($request)
     {
         $city = new City();
         $city->name = $request->name;
-        $this->cityRepo->add($city);
+        $this->cityRepo->save($city);
     }
 
     public function delete($id)
     {
-        $city=City::findOrFail($id);
-        $this->cityRepo->delete($city,$id);
+        $city = $this->cityRepo->findCityById($id);
+        $this->cityRepo->delete($city);
     }
 
-    public function edit($id,$request)
+    public function edit($request, $id)
     {
-        $city=City::findOrFail($id);
+        $city = $this->cityRepo->findCityById($id);
         $city->name = $request->name;
-        $this->cityRepo->edit($id,$city);
+        $this->cityRepo->save($city);
     }
+
+    public function findCityById($id)
+    {
+        return $this->cityRepo->findCityById($id);
+    }
+
 }

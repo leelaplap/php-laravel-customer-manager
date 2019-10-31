@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="904c3d0f-684f-4afd-9702-5962d6898f9b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/CityRepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/CustomerRepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/CityEloquentRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/CustomerEloquentRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/CityServiceInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/CustomerServiceInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/imple/CityService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/imple/CustomerService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/city/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/city/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/CityRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/CityRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/CustomerRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/CustomerRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Eloquent/CityEloquentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/CityEloquentRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Eloquent/CustomerEloquentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/CustomerEloquentRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/CityServiceInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/CityServiceInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/CustomerServiceInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/CustomerServiceInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/imple/CityService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/imple/CityService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/imple/CustomerService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/imple/CustomerService.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -165,8 +161,16 @@
       <option name="presentableId" value="Default" />
       <updated>1572346648846</updated>
       <workItem from="1572346651683" duration="2276000" />
-      <workItem from="1572401999484" duration="28298000" />
+      <workItem from="1572401999484" duration="36923000" />
     </task>
+    <task id="LOCAL-00001" summary="repository">
+      <created>1572512613660</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572512613660</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,5 +186,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="repository" />
   </component>
 </project>

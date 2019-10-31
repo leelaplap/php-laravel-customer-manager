@@ -8,11 +8,11 @@ interface CityRepositoryInterface
 {
     public function getAll();
 
-    public function add($request);
+    public function save($obj);
 
-    public function delete($obj, $id);
+    public function delete($obj);
 
-    public function edit($id,$request);
 
+    public function findCityById($id);
 
 }

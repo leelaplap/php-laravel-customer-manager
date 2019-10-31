@@ -1,19 +1,23 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\City;
 use App\Customer;
 use App\Http\Requests\CustomerValidateRequest;
+use App\Services\CityServiceInterface;
 use App\Services\CustomerServiceInterface;
 use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
     protected $customerService;
+    protected $cityService;
 
-    public function __construct(CustomerServiceInterface $customerService)
+    public function __construct(CustomerServiceInterface $customerService, CityServiceInterface $cityService)
     {
         $this->customerService = $customerService;
+        $this->cityService = $cityService;
     }
 
     public function index()
@@ -25,21 +29,15 @@ class CustomerController extends Controller
 
     public function create()
     {
-        $cities= City::all();
-        return view('customer.create',compact('cities'));
+        $cities = $this->cityService->getAll();
+        return view('customer.create', compact('cities'));
 
     }
 
 
     public function store(CustomerValidateRequest $request)
     {
-        $customer = new Customer();
-        $customer->name = $request->name;
-        $customer->dob = $request->dob;
-        $customer->email = $request->email;
-        $customer->city_id = $request->city_id;
-        $customer->save();
-
+        $this->customerService->add($request);
         return redirect()->route('customers.index');
     }
 
@@ -51,29 +49,22 @@ class CustomerController extends Controller
 
     public function edit($id)
     {
-        $customer = Customer::findOrFail($id);
-        $cities= City::all();
-        return view('customer.edit', compact('customer','cities'));
+        $customer = $this->customerService->findCustomerById($id);
+        $cities = $this->cityService->getAll();
+        return view('customer.edit', compact('customer', 'cities'));
     }
 
 
     public function update(CustomerValidateRequest $request, $id)
     {
-        $customer = Customer::findOrFail($id);
-        $customer->name = $request->name;
-        $customer->dob = $request->dob;
-        $customer->email = $request->email;
-        $customer->city_id = $request->city_id;
-        $customer->save();
-
+        $this->customerService->edit($id, $request);
         return redirect()->route('customers.index');
     }
 
 
     public function destroy($id)
     {
-        $customer = Customer::findOrFail($id);
-        $customer->delete();
+        $this->customerService->delete($id);
         return redirect()->route('customers.index');
     }
 }

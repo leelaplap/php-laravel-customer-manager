@@ -13,4 +13,6 @@ interface CityServiceInterface
     public function delete($id);
 
     public function edit($id,$request);
+
+    public function findCityById($id);
 }

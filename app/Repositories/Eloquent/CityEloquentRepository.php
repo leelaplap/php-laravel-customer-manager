@@ -21,18 +21,21 @@ class CityEloquentRepository implements CityRepositoryInterface
         return $this->city->paginate(5);
     }
 
-    public function add($request)
+
+
+    public function delete($obj)
     {
-        $request->save();
+        $obj->delete();
     }
 
-    public function delete($obj,$id)
+
+    public function findCityById($id)
     {
-        $obj->delete($id);
+     return $this->city->findOrFail($id);
     }
 
-    public function edit($id, $request)
+    public function save($obj)
     {
-        $request->save();
+        $obj->save();
     }
 }

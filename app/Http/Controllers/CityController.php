@@ -43,7 +43,7 @@ class CityController extends Controller
 
     public function edit($id)
     {
-        $city = City::findOrFail($id);
+        $city = $this->cityService->findCityById($id);
         return view('city.edit', compact('city'));
     }
 
@@ -53,7 +53,7 @@ class CityController extends Controller
 //        $city = City::findOrFail($id);
 //        $city->name = $request->name;
 //        $city->save();
-        $this->cityService->edit($id,$request);
+        $this->cityService->edit($request,$id);
         return redirect()->route('cities.index');
 
     }
