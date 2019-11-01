@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -33,6 +35,7 @@ Route::prefix('customers')->group(function (){
    Route::get('{id}/edit','CustomerController@edit') ->name('customers.edit');
    Route::post('{id}/update','CustomerController@update') ->name('customers.update');
    Route::get('{id}','CustomerController@destroy') ->name('customers.delete');
+   Route::post('/search','CustomerController@search') ->name('customers.search');
 });
 
 

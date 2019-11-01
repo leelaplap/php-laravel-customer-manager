@@ -24,7 +24,11 @@
                     <label>Chose the City</label>
                     <select name="city_id">
                         @foreach($cities as $city)
-                            <option value="{{$city->id}}">{{$city->name}}</option>
+                            <option
+                                @if($customer->city_id == $city->id)
+                                    selected
+                                @endif
+                                value="{{$city->id}}">{{$city->name}}</option>
                         @endforeach
                     </select>
                 </div>

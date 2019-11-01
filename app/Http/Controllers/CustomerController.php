@@ -8,6 +8,7 @@ use App\Http\Requests\CustomerValidateRequest;
 use App\Services\CityServiceInterface;
 use App\Services\CustomerServiceInterface;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CustomerController extends Controller
 {
@@ -66,5 +67,14 @@ class CustomerController extends Controller
     {
         $this->customerService->delete($id);
         return redirect()->route('customers.index');
+    }
+
+    public function search(Request $request)
+    {
+
+        $search = $request->get('search');
+        $customers = Customer::where('name', 'LIKE', "%$search%")->paginate(10);
+        return view('customer.index', compact('customers'));
+
     }
 }

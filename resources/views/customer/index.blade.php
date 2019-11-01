@@ -5,6 +5,12 @@
     <div class="row justify-content-center">
 
         <div class="col-md-8">
+            <form action="{{route('customers.search')}}" method="post">
+                @csrf
+                <input type="text" name="search" >
+                <button type="submit" class="btn btn-dark">Search</button>
+            </form>
+
             <a href="{{route('customers.create')}}" class="btn badge-dark">ADD</a>
 
             <div class="card">
@@ -15,7 +21,7 @@
                         <th scope="col">Name</th>
                         <th scope="col">D.O.B</th>
                         <th scope="col">Email</th>
-                        <th scope="col">City Id</th>
+                        <th scope="col">City</th>
                         <th scope="col">Action</th>
                     </tr>
                     </thead>
@@ -37,6 +43,7 @@
                     @endforeach
                 </table>
             </div>
+
         </div>
     </div>
 
