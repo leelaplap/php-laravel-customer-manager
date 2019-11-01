@@ -52,4 +52,10 @@ class CustomerService implements CustomerServiceInterface
     {
         return $this->customerRepo->findCustomerById($id);
     }
+
+    public function search($request)
+    {
+        $obj = $request->get('search');
+        return $this->customerRepo->search($obj);
+    }
 }

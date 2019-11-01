@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="904c3d0f-684f-4afd-9702-5962d6898f9b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Customer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/CustomerRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/CustomerRepositoryInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Repositories/Eloquent/CustomerEloquentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/CustomerEloquentRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/city/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/city/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/CustomerServiceInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/CustomerServiceInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/imple/CustomerService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/imple/CustomerService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -160,7 +160,8 @@
       <workItem from="1572346651683" duration="2276000" />
       <workItem from="1572401999484" duration="48142000" />
       <workItem from="1572595074820" duration="171000" />
-      <workItem from="1572595293681" duration="834000" />
+      <workItem from="1572595293681" duration="1559000" />
+      <workItem from="1572597025386" duration="2505000" />
     </task>
     <task id="LOCAL-00001" summary="repository">
       <created>1572512613660</created>
@@ -183,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572585699723</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="validate city">
+      <created>1572596196471</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572596196471</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +214,7 @@
     <MESSAGE value="repository" />
     <MESSAGE value="repository and service" />
     <MESSAGE value="search" />
-    <option name="LAST_COMMIT_MESSAGE" value="search" />
+    <MESSAGE value="validate city" />
+    <option name="LAST_COMMIT_MESSAGE" value="validate city" />
   </component>
 </project>

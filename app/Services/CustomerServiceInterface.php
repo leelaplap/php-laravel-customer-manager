@@ -15,4 +15,6 @@ interface CustomerServiceInterface
     public function edit($id, $request);
 
     public function findCustomerById($id);
+
+    public function search($request);
 }

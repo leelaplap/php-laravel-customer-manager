@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
 
         <div class="col-md-8">
-            <form action="{{route('customers.search')}}" method="post">
+            <form action="{{route('customers.search')}}" method="get">
                 @csrf
                 <input type="text" name="search" >
                 <button type="submit" class="btn btn-dark">Search</button>

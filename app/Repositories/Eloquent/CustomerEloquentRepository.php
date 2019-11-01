@@ -35,4 +35,10 @@ class CustomerEloquentRepository implements CustomerRepositoryInterface
     {
       $obj->delete();
     }
+
+    public function search($obj)
+    {
+      return $this->customer->where('name', 'LIKE', "%$obj%")->paginate(1);
+
+    }
 }

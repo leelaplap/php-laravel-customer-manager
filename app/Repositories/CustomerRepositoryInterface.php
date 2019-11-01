@@ -13,4 +13,7 @@ interface CustomerRepositoryInterface
     public function findCustomerById($id);
 
     public function delete($obj);
+
+    public function search($obj);
+
 }
