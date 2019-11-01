@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="904c3d0f-684f-4afd-9702-5962d6898f9b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CityVadidateRequest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -170,6 +170,7 @@
       <workItem from="1572595293681" duration="1559000" />
       <workItem from="1572597025386" duration="2826000" />
       <workItem from="1572600220718" duration="169000" />
+      <workItem from="1572600477200" duration="333000" />
     </task>
     <task id="LOCAL-00001" summary="repository">
       <created>1572512613660</created>
@@ -206,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572599773027</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update search into repository">
+      <created>1572600666434</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572600666434</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
