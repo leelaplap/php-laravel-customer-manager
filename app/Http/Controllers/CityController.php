@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\City;
+use App\Http\Requests\CityVadidateRequest;
 use App\Services\CityServiceInterface;
 use Illuminate\Http\Request;
 
@@ -28,7 +29,7 @@ class CityController extends Controller
     }
 
 
-    public function store(Request $request)
+    public function store(CityVadidateRequest $request)
     {
         $this->cityService->add($request);
         return redirect()->route('cities.index');
@@ -48,7 +49,7 @@ class CityController extends Controller
     }
 
 
-    public function update(Request $request, $id)
+    public function update(CityVadidateRequest $request, $id)
     {
 //        $city = City::findOrFail($id);
 //        $city->name = $request->name;

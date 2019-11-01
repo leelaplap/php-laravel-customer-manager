@@ -43,6 +43,7 @@
                     @endforeach
                 </table>
             </div>
+            {{$customers->links()}}
 
         </div>
     </div>

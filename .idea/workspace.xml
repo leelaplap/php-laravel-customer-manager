@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="904c3d0f-684f-4afd-9702-5962d6898f9b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/City.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/City.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Customer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Eloquent/CustomerEloquentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/CustomerEloquentRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/city/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/city/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -157,7 +158,9 @@
       <option name="presentableId" value="Default" />
       <updated>1572346648846</updated>
       <workItem from="1572346651683" duration="2276000" />
-      <workItem from="1572401999484" duration="44091000" />
+      <workItem from="1572401999484" duration="48142000" />
+      <workItem from="1572595074820" duration="171000" />
+      <workItem from="1572595293681" duration="834000" />
     </task>
     <task id="LOCAL-00001" summary="repository">
       <created>1572512613660</created>
@@ -173,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572536490504</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="search">
+      <created>1572585699723</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572585699723</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +194,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -193,6 +205,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="repository" />
     <MESSAGE value="repository and service" />
-    <option name="LAST_COMMIT_MESSAGE" value="repository and service" />
+    <MESSAGE value="search" />
+    <option name="LAST_COMMIT_MESSAGE" value="search" />
   </component>
 </project>

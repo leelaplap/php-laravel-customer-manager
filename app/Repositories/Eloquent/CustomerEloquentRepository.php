@@ -18,7 +18,7 @@ class CustomerEloquentRepository implements CustomerRepositoryInterface
 
     public function getAll()
     {
-        return $this->customer->all();
+        return $this->customer->paginate(1);
     }
 
     public function save($obj)
